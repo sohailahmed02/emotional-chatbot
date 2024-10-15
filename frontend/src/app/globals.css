@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
+
+@layer components{
+  .info_text{
+    @apply p-3 bg-gray-700/50 rounded-lg max-w-[300px]
+  }
+
+  .chatRow{
+    @apply rounded-lg px-5 py-3 text-sm flex items-center
+    justify-center space-x-2 hover:bg-gray-700/70 cursor-pointer
+    text-gray-300 transition-all duration-200 ease-out
+  }
+} 
